@@ -1,39 +1,45 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons  routerLink="" slot="start">
+  <ion-toolbar color="primary">
+    <ion-buttons routerLink="" slot="start">
       <ion-back-button default-href="#"></ion-back-button>
     </ion-buttons>
     <ion-title>Voltar</ion-title>
   </ion-toolbar>
 </ion-header>
 
-
+<h1 style="text-align:center">Registro</h1>
 <ion-content>
-  <ion-button  routerLink="" fill="clear">Voltar</ion-button>
+  <ion-card>
+    <ion-card-content>
 
-  <ion-item>
-    <ion-label position="floating">Nome</ion-label>
-    <ion-input placeholder="Digite seu Nome"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">CPF</ion-label>
-    <ion-input placeholder="Digite seu CPF"></ion-input>
-  </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input placeholder="Digite seu Email"></ion-input>
-  </ion-item>
+      <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input placeholder="Digite seu Nome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">CPF</ion-label>
+        <ion-input placeholder="Digite seu CPF"></ion-input>
+      </ion-item>
 
-  <ion-item>
-    <ion-label position="floating">Senha</ion-label>
-    <ion-input placeholder="Digite sua Senha"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="floating">Confirmar a senha</ion-label>
-    <ion-input placeholder="Confirme sua senha"></ion-input>
-   </ion-item>
-   <ion-button expand="block">SALVAR</ion-button>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input placeholder="Digite seu Email"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input placeholder="Digite sua Senha"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Confirmar a senha</ion-label>
+        <ion-input placeholder="Confirme sua senha"></ion-input>
+      </ion-item>
+      <ion-button expand="block">SALVAR</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
 
 
 </ion-content>

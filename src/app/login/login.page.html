@@ -1,15 +1,12 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title >
+<ion-header >
+  <ion-toolbar color="primary" >
+    <ion-title>Login</ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content>
-  <br>
-
-
-
-
+</ion-header >
+<ion-content >
+  <ion-card>
+    <ion-card-content>
   <ion-item>
     <ion-label>Email:</ion-label>
     <ion-input placeholder="Digite seu email"></ion-input>
@@ -20,15 +17,22 @@
   </ion-item>
   <div style="text-align:right">
 
-  <ion-button fill="clear">Esqueceu a senha?</ion-button>
 
-</div>
+
+    <ion-button fill="clear">Esqueceu a senha?</ion-button>
+
+  </div>
   <ion-button expand="block">ENTRAR</ion-button>
 
-
-
-  <ion-button routerLink="/registro" fill="outline">Registrar</ion-button>
+  <div style="text-align:center">
+    <ion-button routerLink="/registro" fill="clear">Registro</ion-button>
+  </div>
   <br>
+</ion-card-content>
+</ion-card>
+
+
+
 
 
 </ion-content>
