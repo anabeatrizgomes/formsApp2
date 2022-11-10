@@ -1,11 +1,14 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Login</ion-title >
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <br>
+
+
+
 
   <ion-item>
     <ion-label>Email:</ion-label>
@@ -15,8 +18,17 @@
     <ion-label>Senha:</ion-label>
     <ion-input type="password" value="password"></ion-input>
   </ion-item>
-  <ion-button fill="outline">Entrar</ion-button>
-  <ion-button fill="outline">Registrar</ion-button>
+  <div style="text-align:right">
+
   <ion-button fill="clear">Esqueceu a senha?</ion-button>
+
+</div>
+  <ion-button expand="block">ENTRAR</ion-button>
+
+
+
+  <ion-button routerLink="/registro" fill="outline">Registrar</ion-button>
+  <br>
+
 
 </ion-content>

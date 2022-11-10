@@ -1,9 +1,39 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>registroo</ion-title>
+    <ion-buttons  routerLink="" slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Voltar</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
+  <ion-button  routerLink="" fill="clear">Voltar</ion-button>
+
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input placeholder="Digite seu Nome"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">CPF</ion-label>
+    <ion-input placeholder="Digite seu CPF"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input placeholder="Digite seu Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input placeholder="Digite sua Senha"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Confirmar a senha</ion-label>
+    <ion-input placeholder="Confirme sua senha"></ion-input>
+   </ion-item>
+   <ion-button expand="block">SALVAR</ion-button>
+
 
 </ion-content>
