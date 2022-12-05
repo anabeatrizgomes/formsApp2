@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons routerLink="" slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Voltar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="azulclaro">
+
+    <ion-card>
+      <ion-card-content color="azulclaro">
+        <form [formGroup]="formProduto">
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input formControlName="nome" placeholder="Digite seu Nome"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Descrição</ion-label>
+          <ion-input formControlName="descricao" placeholder="Digite a desacrição"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Validade</ion-label>
+          <ion-input formControlName="validade" placeholder="Digite a validade"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Preço</ion-label>
+          <ion-input formControlName="preco" placeholder="Digite o preço"></ion-input>
+        </ion-item>
+        <ion-button expand="block" (click)="salvarRegistro()">SALVAR</ion-button>
+      </form>
+        </ion-card-content>
+
+    </ion-card>
+
+
+</ion-content>

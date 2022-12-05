@@ -8,13 +8,14 @@
 
   <ion-card>
     <ion-card-content>
+      <form [formGroup]="fromLogin">
       <ion-item>
         <ion-label>Email:</ion-label>
-        <ion-input placeholder="Digite seu email"></ion-input>
+        <ion-input formControlName="email" placeholder="Digite seu email"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label>Senha:</ion-label>
-        <ion-input type="password" value="password"></ion-input>
+        <ion-input type="password"formControlName="senha"  value="password"></ion-input>
       </ion-item>
       <div style="text-align: right">
         <ion-button fill="clear" color="azul2">Esqueceu a senha?</ion-button>
@@ -24,7 +25,12 @@
       <div style="text-align: center">
         <ion-button routerLink="/registro" fill="clear" color="azul2">Registro</ion-button>
       </div>
-      <br />
+
+      <div style="text-align: center">
+        <ion-button routerLink="/produto" fill="clear" color="azul2">Produto</ion-button>
+      </div>
+
+    </form>
     </ion-card-content>
   </ion-card>
 </ion-content>

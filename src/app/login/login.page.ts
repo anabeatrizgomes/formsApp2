@@ -8,9 +8,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class LoginPage implements OnInit {
 
- formLogin: FormGroup;
+ fromLogin: FormGroup;
   constructor( private formBuilder: FormBuilder) {
-    this.formLogin = this.formBuilder.group({
+    this.fromLogin = this.formBuilder.group({
       email: ['', Validators.compose([Validators.required, Validators.email])],
       senha: ['', Validators.compose([Validators.required, Validators.minLength(6),Validators.maxLength(8)])],
     });
@@ -19,7 +19,7 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
   salvarLogin(){
-    console.log('Formulário: ', this.formLogin.valid);
+    console.log('Formulário: ', this.fromLogin.valid);
   }
 
 }
